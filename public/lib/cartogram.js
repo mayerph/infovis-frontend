@@ -97,7 +97,7 @@
                                 Math.min(area, desired)
                         sizeErrorsTot += sizeError
                         sizeErrorsNum++
-                        // console.log(o.id, "@", j, "area:", area, "value:", v, "->", desired, radius, mass, sizeError);
+
                         return {
                             id: o.id,
                             area: area,
@@ -112,10 +112,6 @@
 
                 var sizeError = sizeErrorsTot / sizeErrorsNum,
                     forceReductionFactor = 1 / (1 + sizeError)
-
-                // console.log("meta:", meta);
-                // console.log("  total area:", totalArea);
-                // console.log("  force reduction factor:", forceReductionFactor, "mean error:", sizeError);
 
                 var len1,
                     i1,

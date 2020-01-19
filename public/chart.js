@@ -10,7 +10,6 @@ function getRandomColor() {
 }
 
 const drawChartOverview = () => {
-    console.log('was ist2')
     chartOverview = new Chart(document.getElementById('bar-chart-grouped'), {
         type: 'bar',
         data: {
