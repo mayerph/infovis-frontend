@@ -1,0 +1,38 @@
+{
+    "timeline": {
+        "headline": "Die Geschichte beginnt ...",
+        "text": "Meilensteine um 1400",
+        "type": "default",
+        "date": [
+            {
+                "startDate": "1418,5,1",
+                "headline": "hello world"
+            },
+            {
+                "startDate": "1420,3,3",
+                "headline": "hello universe",
+                "text": "Lorem Ipsum",
+                "related": "",
+                "tags": "Personal life"
+            },
+            {
+                "startDate": "1449,12,3",
+                "headline": "Retires from Acting",
+                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
+                "tags": "Personal life"
+            },
+            {
+                "startDate": "1467,12,3",
+                "headline": "Retires from Acting",
+                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
+                "tags": "Personal life"
+            },
+            {
+                "startDate": "1470,12,3",
+                "headline": "Retires from Acting",
+                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
+                "tags": "Personal life"
+            }
+        ]
+    }
+}

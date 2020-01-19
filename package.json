@@ -1,0 +1,37 @@
+{
+    "name": "mefo-report",
+    "version": "0.0.1",
+    "description": "mefo report",
+    "main": "index.js",
+    "scripts": {
+        "start": "node dist/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "philipp mayer",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/bluebird": "^3.5.27",
+        "@types/cors": "^2.8.5",
+        "@types/express": "^4.17.0",
+        "@types/jsonwebtoken": "^8.3.2",
+        "@types/validator": "^10.11.2",
+        "typescript": "^3.5.3",
+        "browser-sync": "2.26.7",
+        "del": "^4.1.1",
+        "gulp": "4.0.2",
+        "merge-stream": "2.0.0"
+    },
+    "dependencies": {
+        "@types/lodash": "^4.14.138",
+        "bootstrap": "4.3.1",
+        "chart.js": "^2.9.3",
+        "chartjs": "^0.3.24",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "jquery": "3.4.1",
+        "jquery.easing": "^1.4.1",
+        "lodash": "^4.17.15",
+        "popper.js": "^1.16.0",
+        "timelinejs": "^2.35.6"
+    }
+}

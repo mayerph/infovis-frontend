@@ -1,0 +1,28 @@
+{
+    "timeline": {
+        "headline": "Reise durch die Habsburger Geschichte um die Jahre 1200",
+        "startDate": "1200",
+        "text": "Erster Test",
+        "type": "default",
+        "date": [
+            {
+                "startDate": "1203,1,5",
+                "headline": "Elizabeth Taylor Dies in Los Angeles",
+                "tags": "Personal life"
+            },
+            {
+                "startDate": "1220,3,3",
+                "headline": "Reveals Congestive Heart Failure",
+                "text": "Ms. Taylor disclosed that she had congestive heart failure,a disorder in which the heart ",
+                "related": "",
+                "tags": "Personal life"
+            },
+            {
+                "startDate": "1249,12,3",
+                "headline": "Retires from Acting",
+                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
+                "tags": "Personal life"
+            }
+        ]
+    }
+}

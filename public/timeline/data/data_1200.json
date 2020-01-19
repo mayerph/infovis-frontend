@@ -1,0 +1,39 @@
+{
+    "timeline": {
+        "headline": "Die Geschichte beginnt ...",
+        "text": "Meilensteine um 1200",
+        "startdate": "1220",
+        "type": "default",
+        "date": [
+            {
+                "startDate": "1218,5,1",
+                "headline": "Rudolf I. wird geboren"
+            },
+            {
+                "startDate": "1220,3,3",
+                "headline": "Reveals Congestive Heart Failure",
+                "text": "Ms. Taylor disclosed that she had congestive heart failure,a disorder in which the heart ",
+                "related": "",
+                "tags": "Personal life"
+            },
+            {
+                "startDate": "1249,12,3",
+                "headline": "Retires from Acting",
+                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
+                "tags": "Personal life"
+            },
+            {
+                "startDate": "1267,12,3",
+                "headline": "Retires from Acting",
+                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
+                "tags": "Personal life"
+            },
+            {
+                "startDate": "1270,12,3",
+                "headline": "Retires from Acting",
+                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
+                "tags": "Personal life"
+            }
+        ]
+    }
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <title>Habsburger Geschichte</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+
+        <!-- Custom styles for this template -->
+        <link href="css/scrolling-nav.css" rel="stylesheet" />
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://d3js.org/topojson.v0.min.js"></script>
+        <script src="js/Chart.min.js"></script>
+        
+        <script src="js/utils.js"></script>
+        
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+
+    <body id="page-top">
+    
+        <!-- Navigation -->
+        <div id="section-navigation">
+            <div id="config-scroller" class="section-navigation-item" data-toggle="tooltip" data-placement="right" title="Konfiguration bearbeiten">
+                <a href="#map"><div>
+                    <i class="material-icons">
+                        build
+                    </i>
+                </div></a>
+            </div>
+
+            <div id="section1-scroller" class="section-navigation-item" data-toggle="tooltip" data-placement="right" title="Zusammenfassende Geschichte">
+                <a href="#about"><div>
+                    <i class="material-icons">
+                        star
+                    </i>
+                </div></a>
+            </div>
+
+            <div class="section-navigation-item" data-toggle="tooltip" data-placement="right" title="Meilensteine">
+                <a href="#milestones"><div>
+                    <i class="material-icons">
+                        timeline
+                    </i>
+                </div></a>
+            </div>
+
+            <div class="section-navigation-item" data-toggle="tooltip" data-placement="right" title="Familienverhältnisse">
+                <a href="#relationships"><div>
+                    <i class="material-icons">
+                        bar_chart
+                    </i>
+                </div></a>
+            </div>
+        </div>
+        
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+            id="mainNav"
+        >
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="/"
+                    ><img class="link-logo" src="assets/lmu.png"> </a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--<div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about"
+                                >About</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link js-scroll-trigger"
+                                href="#services"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link js-scroll-trigger"
+                                href="#contact"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+        </nav>
+
+        <header class="bg-primary text-white">
+            <div class="container text-center">
+                <h1>Herzlich Willkommen</h1>
+                <p class="lead">
+                    Zu einer Reise durch die Habsburger Geschichte
+                </p>
+                <img class="main-logo" src="assets/logo.png">
+            </div>
+        </header>
+
+        <section id="map">
+            <div class="container">
+                <div class="row centered-header centered-header-info">
+                    <h2>Starte deine Reise durch die Zeit ...</h2>
+                </div>
+                <div class="row centered-header">
+                    Wähle Jahr und Länder aus
+                </div>
+                <div class="row">
+                    <div class="input-group mb-3 timeline">
+                        <button id="reset-button" type="button" class="btn btn-primary">reset</button>
+                        <div class="input-group-prepend toggle-button-group" id="button-addon3">
+                          <button class="btn select-button btn-outline-secondary toggled-button y-1279" type="button" name="0" data-json="1279">1200</button>
+                          <button class="btn select-button btn-outline-secondary y-1279" type="button" name="1" data-json="1279">1250</button>
+                          <button class="btn select-button btn-outline-secondary y-1279" type="button" name="2" data-json="1279">1300</button>
+                          <button class="btn select-button btn-outline-secondary y-1279" type="button" name="3" data-json="1279">1350</button>
+                          <div class="new-map-data">
+                            <div></div>
+                        </div>
+                          <button class="btn select-button btn-outline-secondary" type="button" name="4" data-json="1492">1400</button>
+                          <button class="btn select-button btn-outline-secondary" type="button" name="5" data-json="1492">1450</button>
+                          <button class="btn select-button btn-outline-secondary" type="button" name="6" data-json="1492">1500</button>
+                          <div class="new-map-data">
+                            <div></div>
+                        </div>
+                          <button class="btn select-button btn-outline-secondary" type="button" name="7" data-json="1530">1550</button>
+                          <button class="btn select-button btn-outline-secondary" type="button" name="8" data-json="1530">1600</button>
+                          <div class="new-map-data">
+                            <div></div>
+                        </div>
+                          <button class="btn select-button btn-outline-secondary" type="button" name="9" data-json="1650">1650</button>
+                          <div class="new-map-data">
+                            <div></div>
+                        </div>
+                          <button class="btn select-button btn-outline-secondary" type="button" name="10" data-json="1715">1700</button>
+                          <div class="new-map-data">
+                              <div></div>
+                          </div>
+                          <button class="btn select-button btn-outline-secondary" type="button" name="11" data-json="1783">1750</button>
+                        </div>
+                        
+                      </div>
+                </div>
+                <div class="row">
+                    <div id="map-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Wir befinden uns in den Jahren um <span id="first-story-conclusion-year" class="selected-year"></span></h2>
+                        <p class="lead">
+                            <span id="first-story-conclusion">
+                                
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="milestones">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!--<h2>Meilensteine um die Jahre <span class="selected-year"></span></h2>-->
+                        
+                    </div>
+                    <div id="timeline-embed"></div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="relationships" class="bg-light">
+            <div class="container">
+                <div class="row centered-header">
+                    <h2>Die etwas anderen Familienverhältnisse um <span class="selected-year"></span></h2>
+                </div>
+                <div class="row">
+                    <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark" >
+            <div class="container">
+                <p class="m-0 text-center text-white">
+                    Copyright &copy; LMU 2019
+                </p>
+            </div>
+            <!-- /.container -->
+        </footer>
+        <script
+        type="text/javascript"
+        src="timeline/js/storyjs-embed.js"
+        ></script>
+        <script src="dummy.data.js"></script>
+        <script src="index.js"></script>
+        <script src="chart.js"></script>
+
+    </body>
+</html>

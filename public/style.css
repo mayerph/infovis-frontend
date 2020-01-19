@@ -1,0 +1,170 @@
+rect {
+    fill: none;
+    pointer-events: all;
+}
+
+.feature {
+    fill: #ccc;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.feature.active {
+    fill: #007bff;
+}
+
+.mesh {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.3px;
+    stroke-linejoin: bevel;
+}
+
+#map-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset-button {
+    margin-right: 5px;
+}
+
+.toggled-button {
+    color: #fff !important;
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+}
+
+.timeline {
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo {
+    width: 400px;
+    height: auto;
+}
+
+.link-logo {
+    width: 50px;
+    height: auto;
+}
+
+.centered-header {
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-header {
+    margin-bottom: 20px;
+}
+
+#section-navigation {
+    width: 60px;
+    height: 280px;
+    position: fixed;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.section-navigation-item {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff !important;
+    z-index: 100;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+.section-navigation-item > a > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.centered-header-info {
+    margin-bottom: 0 !important;
+}
+
+.section-navigation-item > a {
+    text-decoration: none;
+}
+
+.section-navigation-item > a:visited {
+    text-decoration: none;
+}
+
+.section-navigation-item > a:hover {
+    text-decoration: none;
+}
+
+.section-navigation-item > a:active {
+    text-decoration: none;
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.province {
+    fill: #000;
+    stroke: #fff;
+    stroke-width: 1px;
+}
+.province:hover {
+    fill: #666;
+}
+.hidden {
+    display: none;
+}
+div.tooltip2 {
+    color: #222;
+    background-color: #fff;
+    padding: 0.5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 1000;
+}
+
+.tooltip2-head {
+    font-weight: bold;
+}
+
+.tooltip2-body {
+    font-size: 10px;
+}
+
+.new-map-data {
+    bottom: 0px;
+    height: 40px;
+    width: 2px;
+    position: relative;
+}
+
+.new-map-data > div {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 50%;
+    border: 1px solid #6c757d;
+}
