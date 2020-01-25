@@ -13,9 +13,10 @@
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+       
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      
+
 
         <!-- Custom styles for this template -->
         <link href="css/scrolling-nav.css" rel="stylesheet" />
@@ -26,6 +27,11 @@
         <script src="https://d3js.org/d3.v3.min.js"></script>
         <script src="https://d3js.org/topojson.v0.min.js"></script>
         <script src="js/Chart.min.js"></script>
+        <script src="js/lodash.min.js"></script>
+        <script src="js/moment-with-locales.min.js"></script>
+        <script>
+            moment.locale('de')
+        </script>
         
         <script src="js/utils.js"></script>
         
@@ -36,7 +42,7 @@
     
         <!-- Navigation -->
         <div id="section-navigation">
-            <div id="config-scroller" class="section-navigation-item" data-toggle="tooltip" data-placement="right" title="Konfiguration bearbeiten">
+            <div id="config-scroller" class="section-navigation-item" data-toggle="tooltip" data-placement="right" title="Filter">
                 <a href="#map"><div>
                     <i class="material-icons">
                         build
@@ -52,7 +58,7 @@
                 </div></a>
             </div>
 
-            <div class="section-navigation-item" data-toggle="tooltip" data-placement="right" title="Meilensteine">
+            <div class="section-navigation-item" data-toggle="tooltip" data-placement="right" title="Geburts- & Todestage">
                 <a href="#milestones"><div>
                     <i class="material-icons">
                         timeline
@@ -140,28 +146,28 @@
                           <button class="btn select-button btn-outline-secondary y-1279" type="button" name="1" data-json="1279">1250</button>
                           <button class="btn select-button btn-outline-secondary y-1279" type="button" name="2" data-json="1279">1300</button>
                           <button class="btn select-button btn-outline-secondary y-1279" type="button" name="3" data-json="1279">1350</button>
-                          <div class="new-map-data">
+                          <!--<div class="new-map-data">
                             <div></div>
-                        </div>
+                        </div>-->
                           <button class="btn select-button btn-outline-secondary" type="button" name="4" data-json="1492">1400</button>
                           <button class="btn select-button btn-outline-secondary" type="button" name="5" data-json="1492">1450</button>
                           <button class="btn select-button btn-outline-secondary" type="button" name="6" data-json="1492">1500</button>
-                          <div class="new-map-data">
+                          <!--<div class="new-map-data">
                             <div></div>
-                        </div>
+                        </div>-->
                           <button class="btn select-button btn-outline-secondary" type="button" name="7" data-json="1530">1550</button>
                           <button class="btn select-button btn-outline-secondary" type="button" name="8" data-json="1530">1600</button>
-                          <div class="new-map-data">
+                          <!--<div class="new-map-data">
                             <div></div>
-                        </div>
+                        </div>-->
                           <button class="btn select-button btn-outline-secondary" type="button" name="9" data-json="1650">1650</button>
-                          <div class="new-map-data">
+                          <!--<div class="new-map-data">
                             <div></div>
-                        </div>
+                        </div>-->
                           <button class="btn select-button btn-outline-secondary" type="button" name="10" data-json="1715">1700</button>
-                          <div class="new-map-data">
-                              <div></div>
-                          </div>
+                          <!--<div class="new-map-data">
+                            <div></div>
+                        </div>-->
                           <button class="btn select-button btn-outline-secondary" type="button" name="11" data-json="1783">1750</button>
                         </div>
                         
@@ -177,7 +183,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2>Wir befinden uns in den Jahren um <span id="first-story-conclusion-year" class="selected-year"></span></h2>
+                        <h2><span id="first-story-conclusion-title"></span> (<span id="first-story-conclusion-year" class="selected-year"></span>)</h2>
                         <p class="lead">
                             <span id="first-story-conclusion">
                                 
@@ -196,7 +202,8 @@
                         <!--<h2>Meilensteine um die Jahre <span class="selected-year"></span></h2>-->
                         
                     </div>
-                    <div id="timeline-embed"></div>
+                    <div id="timeline-embed-1"></div>
+                  
                     
                 </div>
                 
@@ -224,11 +231,14 @@
             </div>
             <!-- /.container -->
         </footer>
+        
         <script
+        id="story"
         type="text/javascript"
         src="timeline/js/storyjs-embed.js"
         ></script>
         <script src="dummy.data.js"></script>
+        <script src="data.js"></script>
         <script src="index.js"></script>
         <script src="chart.js"></script>
         

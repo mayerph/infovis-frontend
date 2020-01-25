@@ -6,33 +6,464 @@
         "type": "default",
         "date": [
             {
+                "startDate": "1220,1,1",
+                "headline": "* Sternberg, Jaroslaus (1220–1287)",
+                "text": "Sternberg, Jaroslaus (1220–1287) wird geboren",
+                "asset": {
+                    "media": "http://commons.wikimedia.org/wiki/File:Zelnahora.jpg",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1250,1,1",
+                "headline": "* Sternberg, Sedeslaus (1250–1323)",
+                "text": "Sternberg, Sedeslaus (1250–1323) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1230,1,1",
+                "headline": "* Sternberg, Sedeslaus (1230–1289)",
+                "text": "Sternberg, Sedeslaus (1230–1289) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1229,1,1",
+                "headline": "* Wittelsbach, Ludwig (1229–1294)",
+                "text": "Wittelsbach, Ludwig (1229–1294) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1245,1,1",
+                "headline": "* Welz, Konrad (1245–1305)",
+                "text": "Welz, Konrad (1245–1305) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1220,1,1",
+                "headline": "* Hohenzollern, Friedrich (1220–1289)",
+                "text": "Hohenzollern, Friedrich (1220–1289) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1250,1,1",
+                "headline": "* Hohenzollern, Friedrich (1250–1298)",
+                "text": "Hohenzollern, Friedrich (1250–1298) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1225,1,1",
+                "headline": "* Hohenzollern, Friedrich (1225–1297), Burggraf von Nürnberg",
+                "text": "Hohenzollern, Friedrich (1225–1297), Burggraf von Nürnberg wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1220,1,1",
+                "headline": "* Askanien, Siegfried (1220–1298)",
+                "text": "Askanien, Siegfried (1220–1298) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1230,1,1",
+                "headline": "* Askanien, Johann (1230–1285)",
+                "text": "Askanien, Johann (1230–1285) wird geboren",
+                "asset": {
+                    "media": "http://de.wikipedia.org/wiki/File:Pincerno_-_Johann_I.png",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1220,1,1",
+                "headline": "* Thurn, Salvator (1220–1281)",
+                "text": "Thurn, Salvator (1220–1281) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1210,1,1",
+                "headline": "* Thurn, Hermann (1210–    )",
+                "text": "Thurn, Hermann (1210–    ) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1240,1,1",
+                "headline": "* Thurn, Lombard (1240–1280)",
+                "text": "Thurn, Lombard (1240–1280) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1215,1,1",
+                "headline": "* Thurn, Napoleon (1215–1278)",
+                "text": "Thurn, Napoleon (1215–1278) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
                 "startDate": "1218,5,1",
-                "headline": "Rudolf I. wird geboren"
+                "headline": "* Habsburg, Rudolf I. (1218–1291), König des Heiligen Römischen Reiches",
+                "text": "Habsburg, Rudolf I. (1218–1291), König des Heiligen Römischen Reiches wird geboren",
+                "asset": {
+                    "media": "",
+                    "credit": "",
+                    "caption": ""
+                }
             },
             {
-                "startDate": "1220,3,3",
-                "headline": "Reveals Congestive Heart Failure",
-                "text": "Ms. Taylor disclosed that she had congestive heart failure,a disorder in which the heart ",
-                "related": "",
-                "tags": "Personal life"
+                "startDate": "1233,1,1",
+                "headline": "* Przemysl, Odoaker (1233–1278), König von Böhmen",
+                "text": "Przemysl, Odoaker (1233–1278), König von Böhmen wird geboren",
+                "asset": {
+                    "media": "http://commons.wikimedia.org/wiki/File:Otakar_2.jpg",
+                    "credit": "",
+                    "caption": ""
+                }
             },
             {
-                "startDate": "1249,12,3",
-                "headline": "Retires from Acting",
-                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
-                "tags": "Personal life"
+                "startDate": "1250,1,1",
+                "headline": "* Báthory, Friedrich (1250–1321)",
+                "text": "Báthory, Friedrich (1250–1321) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
             },
             {
-                "startDate": "1267,12,3",
-                "headline": "Retires from Acting",
-                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
-                "tags": "Personal life"
+                "startDate": "1200,1,1",
+                "headline": "* Spinola, Wilhelm (1200–    )",
+                "text": "Spinola, Wilhelm (1200–    ) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
             },
             {
-                "startDate": "1270,12,3",
-                "headline": "Retires from Acting",
-                "text": "Ms. Taylor, whose output steadily decreased beginning in the 1980s, announced her retirement from acting in 2003, saying she preferred to focus on her AIDS charity work.",
-                "tags": "Personal life"
+                "startDate": "1235,1,1",
+                "headline": "* Spinola, Audobert (1235–1291)",
+                "text": "Spinola, Audobert (1235–1291) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1200,1,1",
+                "headline": "* Spinola, Lanfrank (1200–1249)",
+                "text": "Spinola, Lanfrank (1200–1249) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1230,1,1",
+                "headline": "* Spinola, Vedast (1230–1295)",
+                "text": "Spinola, Vedast (1230–1295) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1200,1,1",
+                "headline": "* Spinola, Johann (1200–1268)",
+                "text": "Spinola, Johann (1200–1268) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1230,1,1",
+                "headline": "* Spinola, Widebald (1230–1284)",
+                "text": "Spinola, Widebald (1230–1284) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1240,1,1",
+                "headline": "* Spinola, Niklas (1240–    )",
+                "text": "Spinola, Niklas (1240–    ) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1200,1,1",
+                "headline": "* Liechtenstein von Murau, Ulrich (1200–1275), Truchsess",
+                "text": "Liechtenstein von Murau, Ulrich (1200–1275), Truchsess wird geboren",
+                "asset": {
+                    "media": "http://commons.wikimedia.org/wiki/File:Codex_Manesse_Ulrich_von_Liechtenstein.jpg",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1240,1,1",
+                "headline": "* Liechtenstein von Murau, Otto (1240–1311), Landeshauptmann der Steiermark",
+                "text": "Liechtenstein von Murau, Otto (1240–1311), Landeshauptmann der Steiermark wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1250,1,1",
+                "headline": "* Helfenstein, Ulrich (1250–1315)",
+                "text": "Helfenstein, Ulrich (1250–1315) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1235,1,1",
+                "headline": "* Hohenberg, Albrecht (1235–1298), Graf von Haigerloch",
+                "text": "Hohenberg, Albrecht (1235–1298), Graf von Haigerloch wird geboren",
+                "asset": {
+                    "media": "http://commons.wikimedia.org/wiki/File:Codex_Manesse_Albrecht_von_Haigerloch.jpg",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1230,1,1",
+                "headline": "* Hohenberg, Anna (1230–1281), Königin des Heiligen Römischen Reiches",
+                "text": "Hohenberg, Anna (1230–1281), Königin des Heiligen Römischen Reiches wird geboren",
+                "asset": {
+                    "media": "http://www.bildarchivaustria.at/Pages/ImageDetail.aspx?p_iBildID=12964759",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1200,1,1",
+                "headline": "* Rosenberg, Widukind (1200–1259)",
+                "text": "Rosenberg, Widukind (1200–1259) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1230,1,1",
+                "headline": "* Rosenberg, Ulrich (1230–1282)",
+                "text": "Rosenberg, Ulrich (1230–1282) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1220,1,1",
+                "headline": "* Carretto, Jakob (1220–1272)",
+                "text": "Carretto, Jakob (1220–1272) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1250,1,1",
+                "headline": "* Carretto, Konrad (1250–1316)",
+                "text": "Carretto, Konrad (1250–1316) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1218,1,1",
+                "headline": "* Rosenberg, Wolfgang (1218–1262), Landeshauptmann der Steiermark",
+                "text": "Rosenberg, Wolfgang (1218–1262), Landeshauptmann der Steiermark wird geboren",
+                "asset": {
+                    "media": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1250,1,1",
+                "headline": "* Rosenberg, Heinrich (1250–1310)",
+                "text": "Rosenberg, Heinrich (1250–1310) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1230,1,1",
+                "headline": "* Dohna, Heinrich (1230–1273)",
+                "text": "Dohna, Heinrich (1230–1273) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1220,1,1",
+                "headline": "* Dohna, Otto (1220–1287)",
+                "text": "Dohna, Otto (1220–1287) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1200,1,1",
+                "headline": "* Montfort, Haug (1200–1260)",
+                "text": "Montfort, Haug (1200–1260) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1240,1,1",
+                "headline": "* Montfort, Haug (1240–1309)",
+                "text": "Montfort, Haug (1240–1309) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1242,1,1",
+                "headline": "* Kotromanics, Stephan (1242–1314)",
+                "text": "Kotromanics, Stephan (1242–1314) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1240,1,1",
+                "headline": "* Leiningen, Friedrich (1240–1316)",
+                "text": "Leiningen, Friedrich (1240–1316) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1208,1,1",
+                "headline": "* Este, Albrecht (1208–1264)",
+                "text": "Este, Albrecht (1208–1264) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1247,1,1",
+                "headline": "* Este, Haubald (1247–1293)",
+                "text": "Este, Haubald (1247–1293) wird geboren",
+                "asset": {
+                    "media": "http://commons.wikimedia.org/wiki/File:Obizzo_II_d%27Este3.jpg",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1215,1,1",
+                "headline": "* Este, Beatrix (1215–1245)",
+                "text": "Este, Beatrix (1215–1245) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1204,1,1",
+                "headline": "* Este, Otto (1204–1252)",
+                "text": "Este, Otto (1204–1252) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "startDate": "1236,1,1",
+                "headline": "* Este, Albrecht (1236–1279)",
+                "text": "Este, Albrecht (1236–1279) wird geboren",
+                "asset": {
+                    "media": null,
+                    "credit": "",
+                    "caption": ""
+                }
             }
         ]
     }

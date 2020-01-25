@@ -168,3 +168,8 @@ div.tooltip2 {
     border-radius: 50%;
     border: 1px solid #6c757d;
 }
+
+#timeline-embed-1 {
+    height: 600px;
+    width: 100%;
+}

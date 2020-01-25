@@ -1,12 +1,13 @@
 var width = 1700,
-    height = 700
+    height = 600
 var active = []
+var values2 = { keys: [], '1200': [] }
 
 var projection = d3.geo
     .mercator()
-    .scale(230000)
+    .scale(50000)
     .center([-119.5, 35])
-    .translate([width / 1.13, height * 1.6])
+    .translate([width / 2, height / 2])
 
 var path = d3.geo.path().projection(projection)
 
@@ -31,7 +32,6 @@ let myInterval
 let activeCountries = []
 
 function click(d) {
-    console.log('d', this)
     if (active.includes(d)) {
         active = active.filter(e => e !== d)
         activeCountries = activeCountries.filter(e => e !== d.properties.NAME)
@@ -43,7 +43,6 @@ function click(d) {
         var b = path.bounds(d)
     }
     updateChartOverview()
-    console.log(active)
 }
 
 document.getElementById('reset-button').addEventListener('click', () => {
@@ -94,13 +93,18 @@ for (let i = 0; i < toggleButtonGroup.length; i++) {
 const firstStoryConclusionYear = document.querySelectorAll('.selected-year')
 
 const firstStoryConclusion = document.querySelector('#first-story-conclusion')
+const firstStoryConclusionTitle = document.querySelector(
+    '#first-story-conclusion-title'
+)
 
 const updateFirstStoryConclusion = () => {
     firstStoryConclusionYear.forEach(e => {
         e.innerHTML = activeYear()
     })
     firstStoryConclusion.innerHTML =
-        values2[activeYear()].first_story_conclusion
+        values3[activeYear()].first_story_conclusion
+    firstStoryConclusionTitle.innerHTML =
+        values3[activeYear()].first_story_conclusion_title
 }
 
 updateFirstStoryConclusion()
@@ -113,10 +117,7 @@ const drawMap = () => {
     if (activeGeoJson != activeYearElementJson()) {
         activeGeoJson = activeYearElementJson()
         d3.selectAll('path').remove()
-        d3.json(`/data/data_${activeYearElementJson()}.json`, function(
-            error,
-            h2o
-        ) {
+        d3.json(`/data/data.json`, function(error, h2o) {
             g.selectAll('path')
                 .data(topojson.object(h2o, h2o.objects.hu12).geometries)
                 .enter()
@@ -127,7 +128,7 @@ const drawMap = () => {
                 .on('mouseenter', function(d) {
                     let value = ''
                     const keys = values2.keys
-                    const element = values2[activeYear()].relationships.filter(
+                    const element = values2[activeYear()].filter(
                         e => e.country == d.properties.NAME
                     )[0]
                     if (element) {
@@ -181,14 +182,109 @@ const drawMap = () => {
 
 drawMap()
 //########################################  Timeline   ##################################################
+
 const createTimeline = year => {
-    document.querySelector('#timeline-embed').innerHTML = ''
-    const source = `timeline/data/data_${year}.json`
+    /*getTimelineData((milestones) => {
+
+    })*/
+
+    const currentMilestones = milestones.map((e, i) => {
+        //console.log(e.birthday)
+
+        if (e.birthday && e.birthday.trim() !== '') {
+            var reg1 = new RegExp('[1-9][0-9][0-9][0-9]$')
+            var reg2 = new RegExp('[1-9][0-9][0-9][0-9]~$')
+            var reg3 = new RegExp(
+                /([1-9][0-9][0-9][0-9]\s[A-Z][a-z][a-z]\s([0][1-9]|[1-3][0-9]))$/
+            )
+
+            const varInit = date => {
+                if (date.match(reg1)) {
+                    return null
+                } else if (date.match(reg2)) {
+                    return null
+                } else if (date.match(reg3)) {
+                    return moment(
+                        moment(date, 'YYYY MMM DD').format('YYYY MMM DD'),
+                        'YYYY MMM DD'
+                    ).format('YYYY,M,D')
+                }
+            }
+
+            const birthday = varInit(e.birthday)
+            const deathday = varInit(e.deathday)
+            const response = []
+
+            if (
+                (birthday,
+                parseInt(moment(birthday).format('YYYY')) <=
+                    parseInt(year) + 50 &&
+                    parseInt(moment(birthday).format('YYYY')) >= parseInt(year))
+            ) {
+                response.push({
+                    startDate: birthday,
+                    headline: `* ${e.name}`,
+                    text: `${e.name} wird geboren`,
+                    /*asset: {
+                        media: e.img,
+                        credit: '',
+                        caption: '',
+                    },*/
+                })
+            }
+            if (
+                (deathday,
+                parseInt(moment(deathday).format('YYYY')) <=
+                    parseInt(year) + 50 &&
+                    parseInt(moment(deathday).format('YYYY')) >= parseInt(year))
+            ) {
+                response.push({
+                    startDate: deathday,
+                    headline: `† ${e.name}`,
+                    text: `${e.name} verstirbt`,
+                    /*asset: {
+                        media: e.img,
+                        credit: '',
+                        caption: '',
+                    },*/
+                })
+            }
+            //console.log('response', response)
+            return response
+        }
+    })
+
+    let elements = _.spread(_.union)(currentMilestones)
+    /*elements = elements.slice(
+        elements.length > 50 ? 50 : elements.length,
+        elements.length
+    )*/
+    elements = elements.slice(1, 150)
+
+    const source = {
+        timeline: {
+            headline: 'Die Geschichte beginnt ...',
+            text: `Geburts- & Todestage um ${activeYear()}`,
+            type: 'default',
+            date: elements,
+        },
+    }
+
+    //console.log('source', source)
+    document.querySelector('#timeline-embed-1').innerHTML = ''
+
+    var JS = document.createElement('script')
+    JS.text = 'jsFile=' + source
+    json = source
+
+    //body.appendChild(script)
+
     createStoryJS({
         width: '100%',
         height: '500',
-        source,
-        embed_id: 'timeline-embed', //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
+        source: json,
+        id: 'timeline1',
+        embed_id: 'timeline-embed-1', //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
         start_at_end: false, //OPTIONAL START AT LATEST DATE
         //start_at_slide: '4', //OPTIONAL START AT SPECIFIC SLIDE
         start_zoom_adjust: '0', //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
@@ -201,11 +297,21 @@ const createTimeline = year => {
         js: 'timeline/js/timeline-min.js', //OPTIONAL PATH TO JS
     })
 }
-createTimeline(activeYear())
+
+getTimelineData().then(() => {
+    createTimeline(activeYear())
+})
+
 //#########################################################################################################
 
-const onYearUpdate = async () => {
+const onYearUpdate = () => {
     updateChartOverview()
     updateFirstStoryConclusion()
     createTimeline(activeYear())
+}
+
+const getUrlYear = () => {
+    var urlParams = new URLSearchParams(window.location.search)
+    year = urlParams.get('year')
+    return year
 }

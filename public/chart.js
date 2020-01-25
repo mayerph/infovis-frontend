@@ -14,7 +14,7 @@ const drawChartOverview = () => {
         type: 'bar',
         data: {
             labels: values2.keys,
-            datasets: values2[activeYear()].relationships
+            datasets: values2[activeYear()]
                 .filter(e =>
                     active.map(e => e.properties.NAME).includes(e.country)
                 )
@@ -33,6 +33,15 @@ const drawChartOverview = () => {
             },
             legend: {
                 position: 'bottom',
+            },
+            scales: {
+                yAxes: [
+                    {
+                        ticks: {
+                            beginAtZero: true,
+                        },
+                    },
+                ],
             },
         },
     })
