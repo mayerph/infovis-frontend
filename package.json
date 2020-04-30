@@ -31,7 +31,7 @@
         "chartjs": "^0.3.24",
         "cors": "^2.8.5",
         "express": "^4.17.1",
-        "jquery": "3.4.1",
+        "jquery": "3.5.0",
         "jquery.easing": "^1.4.1",
         "lodash": "^4.17.15",
         "moment": "^2.24.0",
