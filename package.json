@@ -27,7 +27,7 @@
         "@types/lodash": "^4.14.138",
         "@types/node-fetch": "^2.5.4",
         "bootstrap": "4.3.1",
-        "chart.js": "^2.9.3",
+        "chart.js": "^2.9.4",
         "chartjs": "^0.3.24",
         "cors": "^2.8.5",
         "express": "^4.17.1",
